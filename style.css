@@ -1,0 +1,62 @@
+#main-header {
+  text-align: center;
+  color: #81667a;
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+
+header {
+  background-image: url(DogsInThePark.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+#h1 {
+  text-align: center;
+  color: #92b4a7;
+}
+
+li {
+  display: inline;
+  float: left;
+
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b5838d;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #81667a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #92b4a7;
+}
+
+
