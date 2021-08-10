@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
-import { Header, Nav, Main, Footer } from "./components";
+import { Nav, Header, Main, Footer } from "./components";
 
 function render() {
   document.querySelector("#root").innerHTML = `
-  ${Header()}
   ${Nav()}
+  ${Header()}
   ${Main()}
   ${Footer()}
   `;
