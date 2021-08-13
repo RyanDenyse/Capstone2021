@@ -58,12 +58,12 @@ li {
   font-size: xxx-large;
 }
 
-header {
+/* header {
   background-image: url(./lib/DogsInThePark.png);
   background-size: cover;
   height: 100vh;
   padding-top: 0%;
-}
+} */
 
 #h1 {
   text-align: center;

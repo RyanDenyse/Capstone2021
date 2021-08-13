@@ -1,4 +1,4 @@
 import html from "html-literal";
 export default () => html`
-  <h1>Gallery</h1>
+  <h1>breed</h1>
 `;

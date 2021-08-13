@@ -1,9 +1,9 @@
 import html from "html-literal";
 
-export default () => html`
+export default st => html`
   <div class="header" id="main-header">
     <header>
-      <p>Pet Match</p>
+      <p>${st.header}</p>
     </header>
   </div>
 `;
