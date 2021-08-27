@@ -27,16 +27,6 @@ export default () => html`
   <label for="energy"><input type="radio" name="energy" value="large" id="energy-high" /> I'm always seeking new outdoor adventures </label>
   </div>
 
-  <h2> What level of shedding is acceptable? </h2>
-  <div>
-  <label for="shedding"><input type="radio" name="shedding" value="low" id="shedding-low" /> As little as possible </label>
-  <label for="shedding"><input type="radio" name="shedding" value="medium" id="shedding-medium" /> Some shedding is ok </label>
-  <label for="shedding"><input type="radio" name="shedding" value="heavy" id="shedding-heavy" /> I can handle heavy shedding </label>
-  <label for="shedding"><input type="radio" name="shedding" value="no preference" id="shedding-noPreference" /> I have no preference </label>
-  </div>
-
-
-
 
 <div id="quiz"></div>
 <button id="submit">Submit Quiz</button>

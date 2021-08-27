@@ -35,21 +35,30 @@ navLink.addEventListener("click", (event) => {
 );
 }
 
-// axios
-//   .get("https://jsonplaceholder.typicode.com/posts")
-//   // handle the response from the API
-//   .then((response) => {
-//     // for each post in the response Array,
-//     response.data.forEach((post) => {
-//       // add it to state.Blog.posts
-//       state.Quiz.posts.push(post);
-//     });
-//   });
+// // fetching our data from an API
+// fetch("url-to-API-endpoint")
+//   // parsing our response into JSON format
+//   .then((response) => response.json())
+//   // "using" the formatted response in our script
+//   .then((json) => console.log(json));
 
-// When the user scrolls the page, execute myFunction
-// window.onscroll = function() {
-//   myFunction();
-// };
+//   axios
+//   .get("https://api.yelp.com/v3/businesses/{xi_NafsMk55UWq8aKiXCwg}")
+//   .then((response) => console.log(response.data));
+
+// // When the user scrolls the page, execute myFunction
+// // window.onscroll = function() {
+// //   myFunction();
+// // };
+
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// // function myFunction() {
+// //   if (window.pageYOffset >= sticky) {
+// //     navbar.classList.add("sticky");
+// //   } else {
+// //     navbar.classList.remove("sticky");
+// //   }
+// // };
 
 // router.hooks({
 //   before: (done, params) => {
@@ -57,17 +66,23 @@ navLink.addEventListener("click", (event) => {
 //       params && params.hasOwnProperty("page")
 //         ? capitalize(params.page)
 //         : "Home";
-//   }
+
+//     if (page === "Veterinarians") {
+//       axios
+//       .get (
+//         `https://api.yelp.com/v3/businesses/{xi_NafsMk55UWq8aKiXCwg}search?location=Nashville&categories=veterinarians=true HTTP/1.1<br>Host: api.yelp.com<br>Authorization: Bearer <R5G2Ckju74G-BbD0VMzzLF5UOsxguuCmUfFHAamvVVe-j6evtfr2cpm-EcOjseCGGlDQvSYD1UQQD31ry5--_iGmJyr4Bn54_fPRYmuNR57gY8xOvUr-dh7yK9MnYXYx><br>Cache-Control: no-cache`
+//         )
+//         .then(response => {
+//           state.Veterinarians.search = {};
+//           response.data.search[0];
+//           done();
+//         })
+//         .catch((err) => console.log(err));
+//     }
+//   },
 // });
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// };
+
 
 router.on({
   ":page" : (params) => render(state[capitalize(params.page)]),
