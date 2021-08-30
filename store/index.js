@@ -4,3 +4,4 @@ export { default as Breed } from "./Breed";
 export { default as AboutUs } from "./AboutUs";
 export { default as Links } from "./Links";
 export { default as Veterinarians } from "./Veterinarians";
+export { default as Quizresulthusky } from "./Quizresulthusky";

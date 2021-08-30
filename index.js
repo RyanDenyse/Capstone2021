@@ -6,12 +6,12 @@ import * as state from './store';
 import Navigo from "navigo";
 import {capitalize} from "lodash";
 import axios from "axios";
+import e from "cors";
 
 const router = new Navigo(window.location.origin);
 const navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 // const sticky = navbar.offsetTop;
-
 
 
 function render(st = state.Home) {
@@ -21,11 +21,28 @@ function render(st = state.Home) {
   ${Main(st)}
   ${Footer()}
   `;
+
   router.updatePageLinks();
   addEventListeners(st);
+
 };
 
 function addEventListeners(st) {
+  if(st.view === "Quiz"){
+
+    const form = document.querySelector("form")
+    form.addEventListener("submit", (event) => {
+      event.preventDefault()
+        form.style.display = 'none';
+      console.log('You submitted something dope no cap');
+      const answer = document.getElementById("results")
+      answer.innerHTML = `
+    <h1>${st.breeds[0].name}</h1>
+      `
+    })
+
+
+  }
 // add event listeners to Nav items for navigation
 document.querySelectorAll("nav a").forEach((navLink) =>
 navLink.addEventListener("click", (event) => {

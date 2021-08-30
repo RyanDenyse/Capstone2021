@@ -67,6 +67,9 @@ app
     response.status(418).json({ message: `Hello ${name}` });
   });
 
+app
+.use("/quizAnswers", quizAnswers)
+
 
 // Executing the Express (this must be last)
 const port = process.env.PORT || 4040;

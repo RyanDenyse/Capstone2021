@@ -1,11 +1,11 @@
 /* eslint-disable prettier/prettier */
 import html from "html-literal";
-export default () => html`
+export default (st) => html`
 
 <h1>Pet Match Quiz</h1>
 
 
-<form id="questions">
+<form id="questions" >
   <h2> How would you described the size of your living space? </h2>
   <div>
   <label for="size"><input type="radio" name="size" value="small" id="size-small" /> Small with no yard available </label>
@@ -30,9 +30,9 @@ export default () => html`
 
 <div id="quiz"></div>
 <button id="submit">Submit Quiz</button>
-<div id="results"></div>
 
 </form>
+<div id="results"></div>
 
 `;
 
