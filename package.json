@@ -30,7 +30,7 @@
     "mongoose": "^6.0.2",
     "morgan": "^1.10.0",
     "navigo": "^7.1.3",
-    "node": "^14.0gi.0",
+    "node": "^14.0.0",
     "parcel-bundler": "^1.12.5",
     "path": "^0.12.7",
     "yargs-parser": ">=13.1.2",
