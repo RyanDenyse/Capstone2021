@@ -107,7 +107,7 @@ router.hooks({
       case "Veterinarians":
         axios
           .get(
-            `http://api.yelp.com/v3/businesses/search`, {
+            `https://api.yelp.com/v3/businesses/search`, {
             headers: {
               // Host: `api.yelp.com`,
               Authorization: `Bearer ${process.env.YELP_API_KEY}`,
