@@ -110,6 +110,7 @@ router.hooks({
             `https://api.yelp.com/v3/businesses/search`, {
             headers: {
               // Host: `api.yelp.com`,
+              "Access-Control-Allow-Origin": "*",
               Authorization: `Bearer ${process.env.YELP_API_KEY}`,
             },
             params: {
