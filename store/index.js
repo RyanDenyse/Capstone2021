@@ -4,4 +4,3 @@ export { default as Doginfo } from "./Doginfo";
 export { default as Links } from "./Links";
 export { default as Veterinarians } from "./Veterinarians";
 export { default as Quizresult } from "./Quizresult";
-export { default as Aboutus } from "./Aboutus";
