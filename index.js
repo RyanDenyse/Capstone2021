@@ -137,8 +137,6 @@ router.hooks({
   }
 });
 
-
-
 router.on({
   ":page": (params) => render(state[capitalize(params.page)]),
   "/": () => render(state.Home)
