@@ -1,8 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Nav, Header, Main, Footer } from "./components";
 import * as state from './store';
-import dotenv from "dotenv";
-dotenv.config();
+
 
 
 import Navigo from "navigo";
