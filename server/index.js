@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const quizAnswers = require("./routers/quizAnswers");
-// const pizzas = require("./routers/pizzas");
+const breeds = require("./routers/breeds");
 
 dotenv.config();
 
@@ -44,7 +44,7 @@ app.use(cors);
 app.use(express.json());
 app.use(logging);
 app.use(quizAnswers);
-// app.use(pizzas);
+app.use(breeds);
 
 // Configuring Express instance
 app.get("/status", (request, response) => {
@@ -67,8 +67,11 @@ app
     response.status(418).json({ message: `Hello ${name}` });
   });
 
-app
-.use("/quizAnswers", quizAnswers)
+// app
+// .use("/quizAnswers", quizAnswers)
+
+// app
+// .use("/breeds", breeds)
 
 
 // Executing the Express (this must be last)

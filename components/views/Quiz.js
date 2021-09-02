@@ -2,8 +2,9 @@
 import html from "html-literal";
 export default (st) => html`
 
+<div id="quizheader">
 <h1>Pet Match Quiz</h1>
-
+</div>
 
 <form id="questions" >
   <h2> How would you described the size of your living space? </h2>
@@ -15,9 +16,9 @@ export default (st) => html`
 
   <h2>How often can you commit to grooming your dog?</h2>
   <div>
-  <label for="grooming"><input type="radio" name="grooming" value="Once a week" id="once" /> Once a week </label>
-  <label for="grooming"><input type="radio" name="grooming" value="2-3 times a week" id="2-3xWeek" /> 2-3 times a week </label>
-  <label for="grooming"><input type="radio" name="grooming" value="Once a day" id="onceADay" /> Once a day </label>
+  <label for="grooming"><input type="radio" name="grooming" value="low" id="once" /> Once a week </label>
+  <label for="grooming"><input type="radio" name="grooming" value="medium" id="2-3xWeek" /> 2-3 times a week </label>
+  <label for="grooming"><input type="radio" name="grooming" value="large" id="onceADay" /> Once a day </label>
   </div>
 
   <h2>How active are you?</h2>
@@ -27,13 +28,13 @@ export default (st) => html`
   <label for="energy"><input type="radio" name="energy" value="large" id="energy-high" /> I'm always seeking new outdoor adventures </label>
   </div>
 
-
-<div id="quiz"></div>
+<div>
 <button id="submit">Submit Quiz</button>
+</div>
 
 </form>
 <div id="results"></div>
-
 `;
+
 
 

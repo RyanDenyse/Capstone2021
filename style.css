@@ -28,6 +28,8 @@
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  font-size: 25px;
+  font-family: 'Kaisei Tokumin', serif;
 }
 
 li {
@@ -56,16 +58,92 @@ li {
   color: #81667a;
   font-weight: bolder;
   font-size: xxx-large;
+  font-family: 'Kaisei Tokumin', serif;
 }
 
-/* header {
-  background-image: url(./lib/DogsInThePark.png);
-  background-size: cover;
-  height: 100vh;
-  padding-top: 0%;
-} */
 
 #h1 {
   text-align: center;
   color: #92b4a7;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+#questions label {
+  display: block;
+  font-family: 'Kaisei Tokumin', serif;
+  color: #92b4a7;
+  width: 500px;
+  border: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#questions input {
+  width: 30px;
+  margin-left: 20px;
+  color:gray;
+}
+
+#questions h2 {
+    clear: both;
+    padding-top: 20px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+#questions button {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.doglabel {
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  border: 2px solid gray;
+  padding: 10px;
+  color:gray;
+  font-size: 50px;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+.dogpics {
+  display: flex;
+  justify-content: center;
+}
+
+#BImainheader {
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Tokumin', serif;
+  color:gray;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+#quizheader {
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Tokumin', serif;
+  color:gray;
+}
+
+#homeTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Tokumin', serif;
+  color:gray;
+}
+
+.dogdesc {
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: 18px;
+  width: 1100px;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
 }

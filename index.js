@@ -1,12 +1,13 @@
 /* eslint-disable prettier/prettier */
 import { Nav, Header, Main, Footer } from "./components";
 import * as state from './store';
+import dotenv from "dotenv";
+dotenv.config();
 
 
 import Navigo from "navigo";
-import {capitalize} from "lodash";
+import { capitalize } from "lodash";
 import axios from "axios";
-import e from "cors";
 
 const router = new Navigo(window.location.origin);
 const navbar = document.getElementById("navbar");
@@ -35,22 +36,22 @@ function addEventListeners(st) {
       form.style.display = "none";
       console.log("You submitted something dope");
 
-    const inputList = event.target.elements
-    const requestData = {
-      crust: inputList.size.value,
-      cheese: inputList.grooming.value,
-      sauce: inputList.energy.value
+      const inputList = event.target.elements
+      const requestData = {
+        size: inputList.size.value,
+        grooming: inputList.grooming.value,
+        energy: inputList.energy.value
       }
 
-    axios
-      .post(`${process.env.API}/quizAnswers`, requestData)
-      .then(response => {
-        state.Quiz.quizAnswers.push(response.data);
-        router.navigate("/Quiz");
-      })
-      .catch(error => {
-        console.log("It puked", error);
-      })
+      axios
+        .post(`${process.env.API}/quizAnswers`, requestData)
+        .then(response => {
+          state.Quiz.quizAnswers.push(response.data);
+          router.navigate("/Quiz");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        })
 
     })
   }
@@ -58,12 +59,15 @@ function addEventListeners(st) {
 
 
 
+
+
+
 // add event listeners to Nav items for navigation
 document.querySelectorAll("nav a").forEach((navLink) =>
-navLink.addEventListener("click", (event) => {
-  event.preventDefault();
-  render(state[event.target.title]);
-})
+  navLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    render(state[event.target.title]);
+  })
 );
 
 // // fetching our data from an API
@@ -91,31 +95,51 @@ navLink.addEventListener("click", (event) => {
 // //   }
 // // };
 
-// router.hooks({
-//   before: (done, params) => {
-//     const page =
-//       params && params.hasOwnProperty("page")
-//         ? capitalize(params.page)
-//         : "Home";
 
-//     if (page === "Veterinarians") {
-//       axios
-//       .get (
-//         `https://api.yelp.com/v3/businesses/{xi_NafsMk55UWq8aKiXCwg}search?location=Nashville&categories=veterinarians=true HTTP/1.1<br>Host: api.yelp.com<br>Authorization: Bearer <R5G2Ckju74G-BbD0VMzzLF5UOsxguuCmUfFHAamvVVe-j6evtfr2cpm-EcOjseCGGlDQvSYD1UQQD31ry5--_iGmJyr4Bn54_fPRYmuNR57gY8xOvUr-dh7yK9MnYXYx><br>Cache-Control: no-cache`
-//         )
-//         .then(response => {
-//           state.Veterinarians.search = {};
-//           response.data.search[0];
-//           done();
-//         })
-//         .catch((err) => console.log(err));
-//     }
-//   },
-// });
+
+
+router.hooks({
+  before: (done, params) => {
+    const page =
+      params && params.hasOwnProperty("page")
+        ? capitalize(params.page)
+        : "Home";
+    switch (page) {
+      case "Veterinarians":
+        axios
+          .get(
+            `http://api.yelp.com/v3/businesses/search`, {
+            headers: {
+              // Host: `api.yelp.com`,
+              Authorization: `Bearer ${process.env.YELP_API_KEY}`,
+            },
+            params: {
+              location: "Nashville",
+              term: "Veterinarians",
+              open_now: true
+            }
+          }
+          )
+          .then(response => {
+            // state.Veterinarians.search = {};
+            // state.Veterinarians.search.city = response.data.business.location.city;
+            // state.Veterinarians.search.location = response.data.business.location;
+            // state.Veterinarians.search.name = response.data.business.name
+            // state.Veterinarians.search.title = response.data.business.categories.title;
+            console.log(response);
+            done();
+          })
+          .catch((err) => console.log(err));
+        break;
+      default:
+        done();
+    }
+  }
+});
 
 
 
 router.on({
-  ":page" : (params) => render(state[capitalize(params.page)]),
+  ":page": (params) => render(state[capitalize(params.page)]),
   "/": () => render(state.Home)
 }).resolve();

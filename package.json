@@ -37,6 +37,7 @@
     "node": "^15.8.0",
     "parcel-bundler": "^1.12.5",
     "path": "^0.12.7",
-    "yargs-parser": ">=13.1.2"
+    "yargs-parser": ">=13.1.2",
+    "yelp-fusion": "^3.0.0"
   }
 }

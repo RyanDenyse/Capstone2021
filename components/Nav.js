@@ -8,10 +8,10 @@ export default (links) => html`
   <div id="navbar">
   <nav>
       <ul class="navlist" id="list1">
-        <img id="logo" src="${Pet}" alt="Pet Match Logo" width="200" height="100">
-        ${links.map(
+        <li><img id="logo" src="${Pet}" alt="Pet Match Logo" width="200" height="100"></li>
+        <li id="navlinks" >${links.map(
           (link) => `<li class="navlist-item"><a href="${link.title}" title="${link.title}">${link.text}</a></li>`
-        )}
+        )}</li>
       </ul>
     </nav>
   </div>

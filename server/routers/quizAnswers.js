@@ -2,6 +2,7 @@
 const { Router } = require("express");
 const router = Router();
 const quizAnswer = require("../models/quizAnswer");
+// const breed = require("../models/breed");
 
 // Create record in MongoDB
 router.post('/quizAnswers', (request, response) => {
@@ -41,9 +42,10 @@ router.put('/quizAnswers/:id', (request, response) => {
   quizAnswer.model.findByIdAndUpdate(
     request.params.id,
     { $set: {
-      size: String,
-      grooming: String,
-      energy: String
+      "name": body.name,
+      "size": body.size,
+      "grooming": body.grooming,
+      "energy": body.energy
     } },
     (error, data) => {
       if (error) return response.sendStatus(500).json(error);

@@ -1,7 +1,7 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "AboutUs", text: "About Us" },
+  { title: "Aboutus", text: "About Us" },
   { title: "Quiz", text: "Quiz" },
-  { title: "Breed", text: "Breed Information" },
+  { title: "Doginfo", text: "Breed Information" },
   { title: "Veterinarians", text: "Veterinarians" }
 ];
