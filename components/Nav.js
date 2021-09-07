@@ -6,12 +6,20 @@ import Pet from "../lib/PetMatchLogo.png";
 export default (links) => html`
 
   <div id="navbar">
-  <nav>
+    <nav>
       <ul class="navlist" id="list1">
         <li><img id="logo" src="${Pet}" alt="Pet Match Logo" width="200" height="100"></li>
-        <li id="navlinks" >${links.map(
-          (link) => `<li class="navlist-item"><a href="${link.title}" title="${link.title}">${link.text}</a></li>`
-        )}</li>
+        <li id="navlinks">${links.map(
+  (link) => `
+        <li class="navlist-item"><a href="${link.title}" title="${link.title}">${link.text}</a></li>`
+)}</li>
+        <li>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+        </li>
       </ul>
     </nav>
   </div>

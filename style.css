@@ -95,6 +95,7 @@ li {
   margin-top: 20px;
 }
 
+/* dog names on breed info page */
 .doglabel {
   display: flex;
   justify-content: center;
@@ -104,13 +105,16 @@ li {
   color:gray;
   font-size: 50px;
   font-family: 'Kaisei Tokumin', serif;
+  background-color: #92b4a7 ;
 }
 
+/* pics of dogs on breed info page */
 .dogpics {
   display: flex;
   justify-content: center;
 }
 
+/* main header on breed info page */
 #BImainheader {
   display: flex;
   justify-content: center;
@@ -118,6 +122,7 @@ li {
   color:gray;
 }
 
+/* YT video on homepage */
 #video {
   display: flex;
   justify-content: center;
@@ -130,13 +135,14 @@ li {
   color:gray;
 }
 
-#homeTitle {
+/* #homeTitle {
   display: flex;
   justify-content: center;
   font-family: 'Kaisei Tokumin', serif;
   color:gray;
-}
+} */
 
+/* info paragraph on breeds */
 .dogdesc {
   display: flex;
   justify-content: center;
@@ -169,6 +175,7 @@ li {
   margin: 1px;
 }
 
+/* pic on result page */
 #lovepic {
   display: flex;
   justify-content: center;
@@ -178,6 +185,7 @@ li {
   color:#92b4a7;
 }
 
+/* quiz result link to breed info page */
 #doginfoLink {
   display: flex;
   justify-content: center;
@@ -185,3 +193,62 @@ li {
   color:gray;
   font-weight: bolder;
 }
+
+/* unvisited link */
+#doginfoLink a:link {
+  text-decoration: none;
+  background-color: #92b4a7 ;
+}
+
+/* visited link */
+#doginfoLink a:visited {
+  text-decoration: none;
+  background-color: #b5838d;
+}
+
+/* mouse over link */
+#doginfoLink a:hover {
+  text-decoration: underline;
+  background-color: #b5838d;
+}
+
+/* selected link */
+#doginfoLink a:active {
+  text-decoration: underline;
+}
+
+/* homepage */
+#introHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color:gray;
+  border-radius: 2px;
+  border: 2px solid gray;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+/* homepage */
+#introPara {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color:gray;
+  font-family: 'Kaisei Tokumin', serif;
+  width: 1100px;
+  border: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.navlist input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
