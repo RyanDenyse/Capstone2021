@@ -41,12 +41,12 @@ function addEventListeners(st) {
         grooming: inputList.grooming.value,
         energy: inputList.energy.value
       }
-
+      console.log(requestData);
       axios
         .post(`${process.env.API}/quizAnswers`, requestData)
         .then(response => {
-          state.Quiz.quizAnswers.push(response.data);
-          router.navigate("/Quiz");
+          state.Quizresult.result = response.data;
+          router.navigate("/Quizresult");
         })
         .catch(error => {
           console.log("It puked", error);

@@ -2,7 +2,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <footer>
-    <a href="#">Contact Us</a>
+  <footer id="footer">
+    <a href="mailto: abc@example.com?subject = Feedback&body = Message">Contact Us</a>
   </footer>
 `;
