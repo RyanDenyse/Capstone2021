@@ -1,6 +1,11 @@
+/* eslint-disable prettier/prettier */
 import html from "html-literal";
 export default () => html`
+
+<div id="homeTitle">
   <h1>Home</h1>
+</div>
+
   <div id="video">
     <iframe
       width="560"
@@ -12,6 +17,7 @@ export default () => html`
       allowfullscreen
     ></iframe>
   </div>
+
   <p>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni excepturi
     praesentium nam maxime suscipit esse quam nihil ad temporibus earum libero

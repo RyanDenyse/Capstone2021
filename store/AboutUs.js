@@ -1,3 +1,3 @@
 export default {
-  view: "AboutUs"
+  view: "Aboutus"
 };
