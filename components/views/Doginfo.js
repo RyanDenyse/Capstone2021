@@ -21,9 +21,10 @@ export default () => html`
 
   <div class="dogdesc">
     <p> Akita's are natural protectors and love human companionship. These dogs take protecting their family seriously
-      but also loves a good play session! This dogs need an outlet to exercise and craves mental stimulation. These dogs
+      but also love a good play session! This dogs need an outlet to exercise and craves mental stimulation. These dogs
       have a dense coat that does require regular brushing to avoid shedding all over the home. Socialization is key
-      with this breed! Read more about Akitas <a href="https://www.akc.org/dog-breeds/akita/">here</a>
+      with this breed! Read more about Akitas <a href="https://www.akc.org/dog-breeds/akita/" target="_blank"
+        rel="noopener noreferrer">here</a>
     </p>
   </div>
 
@@ -42,7 +43,7 @@ export default () => html`
       thrust. Boxers are upbeat and playful. Their patience and protective nature have earned them a reputation as a
       great dog with children. They take the jobs of watchdog and family guardian seriously and will meet threats
       fearlessly. Boxers do best when exposed to a lot of people and other animals in early puppyhood.Read more about
-      Boxers <a href="https://www.akc.org/dog-breeds/boxer/">here</a>
+      Boxers <a href="https://www.akc.org/dog-breeds/boxer/" target="_blank" rel="noopener noreferrer">here</a>
     </p>
   </div>
 
@@ -64,7 +65,7 @@ export default () => html`
       household like a little Napoleon. Compact and confident, Chihuahuas are ideal city pets. They are too small for
       roughhousing with kids, and special care must be taken in cold weather, but Chihuahuas are adaptable as long as
       they get lots of quality time in their preferred lap. Read more about Chihuahuas <a
-        href="https://www.akc.org/dog-breeds/chihuahua/">here</a>
+        href="https://www.akc.org/dog-breeds/chihuahua/" target="_blank" rel="noopener noreferrer">here</a>
     </p>
   </div>
 
@@ -84,7 +85,8 @@ export default () => html`
       TV. Due to
       their fur, Shih Tzu's need to be groomed frequently and brushed daily to avoid matting, however shedding is very
       minimal. These dogs are prone to dental disease and other oral issues so be sure to form a good dental regimen
-      with your Veterinarian! Read more about Shih Tzus <a href="https://www.akc.org/dog-breeds/shih-tzu/">here</a>.
+      with your Veterinarian! Read more about Shih Tzus <a href="https://www.akc.org/dog-breeds/shih-tzu/"
+        target="_blank" rel="noopener noreferrer">here</a>.
     </p>
   </div>
 
@@ -107,7 +109,8 @@ export default () => html`
       coat variations of dachshund and their grooming needs vary
       dependent on they type. Due to their shape, Dachshunds can be prone to back and joint injuries. Keeping these dogs
       at a healthy weight can aid in avoiding some injuries. Please discuss preventative measures with your
-      Veterinarian. Read more about Dachshunds <a href="https://www.akc.org/dog-breeds/dachshund/">here</a>.
+      Veterinarian. Read more about Dachshunds <a href="https://www.akc.org/dog-breeds/dachshund/" target="_blank"
+        rel="noopener noreferrer">here</a>.
     </p>
   </div>
 

@@ -18,7 +18,7 @@ export default () => html`
     suitable for their lives.
     <br>
     <br>We've found that when people make educated decisions on what Dog Breed is best for them,
-    they and their pets live happier and healthier lives. We strongly belief that if everyone made well-rounded
+    they and their pets live happier and healthier lives. We strongly believe that if everyone made well-rounded
     decisions when choosing their next pet, together we can decrease the number of pets that have to go to shelters or
     are euthanized.
     <br>
